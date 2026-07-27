@@ -66,21 +66,32 @@ const FORM_ENDPOINT = 'send.php';
 
 const translations = {
   th: {
-    'nav.home':     'หน้าแรก',
-    'nav.why':      'OUTBODY คืออะไร',
-    'nav.analysis': 'การวิเคราะห์',
-    'nav.report':   'รายงาน',
-    'nav.cta':      'ลงทะเบียนทดลอง',
+    'nav.home':      'หน้าแรก',
+    'nav.why':       'OUTBODY คืออะไร',
+    'nav.solutions': 'โซลูชัน',
+    'nav.analysis':  'การวิเคราะห์',
+    'nav.report':    'รายงาน',
+    'nav.cta':       'ลงทะเบียนทดลอง',
     'btn.book':     'ลงทะเบียนทดลอง',
     'btn.download': 'ดาวน์โหลดตัวอย่างรายงาน',
     'btn.contact':  'ติดต่อเรา',
-    'hero.title':    'ร่างกายที่ดี คือจุดเริ่มต้นของการเรียนรู้',
-    'hero.subtitle': 'วิเคราะห์สรีระและพัฒนาการทางกายของเด็ก<br />เพื่อส่งเสริมสมาธิ การเรียนรู้ และการเติบโตอย่างเต็มศักยภาพ',
+    'hero.title':    'เข้าใจร่างกาย คือจุดเริ่มต้นของทุกเป้าหมาย',
+    'hero.subtitle': 'เทคโนโลยี AI วิเคราะห์ร่างกายอัจฉริยะ เพื่อการฟื้นฟู พัฒนาสมรรถภาพ<br />การเติบโตของเด็ก และสุขภาพในองค์กร',
     'hero.tagline':  'ให้ OUTBODY ช่วยคุณเริ่มต้น<strong>การเปลี่ยนแปลงที่ดีขึ้น</strong>',
-    'research.title':    'การเคลื่อนไหวของร่างกาย<br/><span class="hl">ส่งผลต่อการเรียนรู้โดยตรง</span>',
+    'pillars.label': 'โซลูชันของเรา',
+    'pillars.title': 'หนึ่งเครื่อง<br/><span class="hl">เหมาะกับทุกเป้าหมาย</span>',
+    'pillars.rehab.name':     'ฟื้นฟูสมรรถภาพ & Wellness',
+    'pillars.rehab.desc':     'ติดตามความคืบหน้าการฟื้นฟูและความสมดุลของร่างกายอย่างเป็นรูปธรรม ช่วยนักกายภาพบำบัดวางแผนการดูแลได้แม่นยำขึ้น',
+    'pillars.gym.name':       'ฟิตเนสและกีฬา',
+    'pillars.gym.desc':       'ข้อมูลความแข็งแรง ความคล่องตัว และการทรงตัว ให้เทรนเนอร์ออกแบบโปรแกรมเฉพาะบุคคลและลดความเสี่ยงบาดเจ็บ',
+    'pillars.kids.name':      'เด็กและการศึกษา',
+    'pillars.kids.desc':      'ติดตามพัฒนาการทางกายของเด็ก เพื่อส่งเสริมสมาธิ การเรียนรู้ และการเติบโตอย่างเต็มศักยภาพ',
+    'pillars.corporate.name': 'สุขภาพองค์กร',
+    'pillars.corporate.desc': 'ประเมินสุขภาพพนักงานได้รวดเร็วและเป็นระบบ ต่อยอดเป็นสวัสดิการและโปรแกรมสุขภาพในองค์กร',
+    'research.title':    'การเคลื่อนไหวของร่างกาย<br/><span class="hl">ส่งผลต่อศักยภาพในทุกช่วงวัย</span>',
     'research.subtitle': 'งานวิจัยระดับโลกบอกอะไร',
-    'research.who':      'เด็กควรมีกิจกรรมทางกายอย่างน้อย <strong>60 นาทีต่อวัน</strong> เพื่อพัฒนาการที่สมบูรณ์',
-    'research.oecd':     'เด็กที่มีกิจกรรมทางกายสม่ำเสมอ มีแนวโน้ม<strong>ผลการเรียนที่ดีกว่า</strong>',
+    'research.who':      'กิจกรรมทางกายอย่างสม่ำเสมอคือรากฐานของสุขภาพที่ดี <strong>ในทุกช่วงวัย</strong> ตั้งแต่เด็กจนถึงวัยทำงาน',
+    'research.oecd':     'ผู้ที่มีกิจกรรมทางกายสม่ำเสมอ มีแนวโน้ม<strong>สมาธิ ประสิทธิภาพการทำงาน และคุณภาพชีวิตที่ดีกว่า</strong>',
     'research.harvard':  'การออกกำลังกายช่วยกระตุ้น<strong>การทำงานของสมอง ความจำ และสมาธิ</strong>',
     'research.readmore': 'อ่านงานวิจัย →',
     'analysis.label':   'การวิเคราะห์',
@@ -93,28 +104,21 @@ const translations = {
     'analysis.body':        'ประเมินร่างกายร่วมกับค่า InBody',
     'cta.title': 'เริ่มต้นการเปลี่ยนแปลงที่ดีขึ้น<br /><span class="hl">วันนี้</span>',
     'cta.desc':  'ทีมผู้เชี่ยวชาญของเราพร้อมดูแลคุณตั้งแต่ต้นจนจบ',
-    'kidsprob.label':          'สถานการณ์เด็กไทย',
-    'kidsprob.title':          'เด็กไทยกำลังเผชิญ<br/><span class="hl">ปัญหาอะไร?</span>',
-    'kidsprob.problems.label': '4 ปัญหาหลักที่พบในเด็กไทย',
-    'kidsprob.p1': 'นั่งเรียนเป็นเวลานาน',
-    'kidsprob.p2': 'ใช้หน้าจอมากขึ้น',
-    'kidsprob.p3': 'ขาดการเคลื่อนไหว',
-    'kidsprob.p4': 'พักผ่อนไม่เพียงพอ',
-    'kidsprob.effects.label':  'ผลที่เกิดขึ้น',
-    'kidsprob.e1': 'หลังค่อม ไหล่ห่อ',
-    'kidsprob.e2': 'สมาธิลดลง อ่อนล้าง่าย',
-    'kidsprob.e3': 'ขาดความมั่นใจ',
     'want.label': 'ความต้องการของลูกค้า',
     'want.title': 'ลูกค้าต้องการ<br /><span class="hl">บริการเฉพาะบุคคล</span>',
     'want.desc':  'ข้อมูลร่างกายที่จำเป็นจะแตกต่างกันไปตามเป้าหมายและความสนใจของแต่ละคน',
-    'edu.title':      'จากประเทศที่ให้ความสำคัญกับการศึกษา<span class="hl">สู่การดูแลพัฒนาการร่างกายควบคู่กัน</span>',
-    'edu.desc':       'โรงเรียนและศูนย์พัฒนาเด็กในเกาหลีได้เริ่มใช้ข้อมูลด้านสรีระ ความสมดุลร่างกาย และการเคลื่อนไหว เพื่อช่วยสนับสนุนการเรียนรู้ของเด็กอย่างเป็นระบบ',
+    'edu.title':  'จากการประเมินร่างกาย<span class="hl">สู่ผลลัพธ์ที่วัดผลได้จริง</span>',
+    'edu.desc':   'ไม่ว่าจะเป็นคลินิก ฟิตเนส โรงเรียน หรือองค์กร OUTBODY ใช้กระบวนการเดียวกันในการแปลงข้อมูลร่างกายให้เป็นแผนพัฒนาเฉพาะบุคคลที่ติดตามผลได้อย่างเป็นระบบ',
+    'edu.step1':  'ประเมินร่างกาย',
+    'edu.step2':  'วิเคราะห์ด้วย AI',
+    'edu.step3':  'แผนพัฒนาเฉพาะบุคคล',
+    'edu.step4':  'ผลลัพธ์ที่ดีขึ้น',
     'experts.title':  'พัฒนาโดยผู้เชี่ยวชาญด้านสุขภาพ<br/><span class="hl">เทคโนโลยี และการวิเคราะห์การเคลื่อนไหว</span>',
     'experts.subtitle': 'ประสบการณ์รวม 5 ปี พัฒนาและใช้งานในหลายประเทศ งานวิจัยและฐานข้อมูลจำนวนมาก',
-    'experts.c1':     'ทีมผู้เชี่ยวชาญด้านสุขภาพและกายภาพบำบัด ออกแบบโปรแกรมที่ปลอดภัยและมีประสิทธิภาพสำหรับเด็ก',
+    'experts.c1':     'ทีมผู้เชี่ยวชาญด้านสุขภาพและกายภาพบำบัด ออกแบบโปรแกรมที่ปลอดภัยและมีประสิทธิภาพสำหรับผู้ใช้งานทุกกลุ่ม',
     'experts.c2':     'ระบบ AI วิเคราะห์ข้อมูลร่างกายแบบ Real-time เพื่อให้ผลลัพธ์ที่แม่นยำและปรับแต่งได้',
     'experts.c3':     'ศาสตร์ด้านการเคลื่อนไหวร่างกายที่ช่วยวิเคราะห์ท่าทาง ความสมดุล และพัฒนาการกล้ามเนื้อ',
-    'experts.c4':     'วิเคราะห์ข้อมูลเชิงลึกเพื่อติดตามพัฒนาการและสร้างรายงานที่เข้าใจง่ายสำหรับผู้ปกครองและครู',
+    'experts.c4':     'วิเคราะห์ข้อมูลเชิงลึกเพื่อติดตามพัฒนาการและสร้างรายงานที่เข้าใจง่าย สำหรับทั้งผู้ใช้งานและผู้ดูแล',
     'analysis.title': 'วิเคราะห์อะไรได้บ้าง',
     'analysis.posture':     'การจัดแนวร่างกาย — ประเมินความสมดุลและแนะนำท่าทางที่ถูกต้อง',
     'analysis.flexibility': 'ความยืดหยุ่น — ประเมินการเคลื่อนไหวและความมั่นคงของข้อต่อ',
@@ -137,7 +141,14 @@ const translations = {
     'modal.submit':  'ส่งข้อมูล',
     'modal.success_title': 'ส่งข้อมูลสำเร็จ!',
     'modal.success_desc':  'ทีมงานจะติดต่อกลับภายใน 1 วันทำการ',
-    'footer.tagline': 'ยกระดับมาตรฐานการวิเคราะห์ร่างกายด้วย AI และโซลูชันการบริหารลูกค้าสำหรับมืออาชีพด้านสุขภาพและฟิตเนส',
+    'modal.interest_label':       'คุณสนใจด้านไหน',
+    'modal.interest.placeholder': 'เลือกด้านที่สนใจ',
+    'modal.interest.rehab':       'ฟื้นฟูสมรรถภาพ / Wellness',
+    'modal.interest.gym':         'ฟิตเนสและกีฬา',
+    'modal.interest.kids':        'เด็กและการศึกษา',
+    'modal.interest.corporate':   'สุขภาพองค์กร',
+    'modal.interest.other':       'อื่น ๆ',
+    'footer.tagline': 'ยกระดับมาตรฐานการวิเคราะห์ร่างกายด้วย AI สำหรับการฟื้นฟู ฟิตเนส การศึกษา และสุขภาพองค์กร',
     'stats.units':   'เครื่องติดตั้งในเกาหลี',
     'stats.items':   'รายการวิเคราะห์',
     'stats.content': 'คอนเทนต์ออกกำลังกาย',
@@ -191,17 +202,28 @@ const translations = {
     'nav.why':      'What is OUTBODY',
     'nav.analysis': 'Analysis',
     'nav.report':   'Report',
-    'nav.cta':      'Book a Trial',
+    'nav.cta':       'Book a Trial',
+    'nav.solutions': 'Solutions',
     'btn.book':     'Try Body Analysis',
     'btn.download': 'Download Sample Report',
     'btn.contact':  'Contact Us',
-    'hero.title':    'A Healthy Body is the Foundation of Learning',
-    'hero.subtitle': 'Analyze children\'s physique and physical development<br />to enhance focus, learning, and growth to their full potential.',
+    'hero.title':    'Understanding the Body Is the Start of Every Goal',
+    'hero.subtitle': 'AI-powered body analysis for recovery, performance,<br />child development, and workplace wellness.',
     'hero.tagline':  'Let OUTBODY help you start your <strong>better transformation</strong>',
-    'research.title':    'Body Movement<br/><span class="hl">Directly Impacts Learning</span>',
+    'pillars.label': 'Our Solutions',
+    'pillars.title': 'One Device.<br/><span class="hl">Every Goal.</span>',
+    'pillars.rehab.name':     'Wellness & Rehab',
+    'pillars.rehab.desc':     'Track recovery progress and body balance objectively — helping physiotherapists plan care with precision.',
+    'pillars.gym.name':       'Performance Gyms',
+    'pillars.gym.desc':       'Strength, agility, and balance data that lets trainers personalize programs and reduce injury risk.',
+    'pillars.kids.name':      'Kids & Education',
+    'pillars.kids.desc':      'Track children\'s physical development to support focus, learning, and growth to their full potential.',
+    'pillars.corporate.name': 'Corporate Wellness',
+    'pillars.corporate.desc': 'Fast, systematic employee health assessments that power workplace wellness programs and benefits.',
+    'research.title':    'Body Movement<br/><span class="hl">Impacts Potential at Every Age</span>',
     'research.subtitle': 'What does global research say?',
-    'research.who':      'Children should have at least <strong>60 minutes of physical activity per day</strong> for complete development.',
-    'research.oecd':     'Children who are regularly physically active tend to have <strong>better academic outcomes</strong>.',
+    'research.who':      'Regular physical activity is the foundation of good health <strong>at every stage of life</strong>, from childhood through the working years.',
+    'research.oecd':     'People who are regularly physically active tend to have <strong>better focus, productivity, and quality of life</strong>.',
     'research.harvard':  'Exercise helps stimulate <strong>brain function, memory, and concentration</strong>.',
     'research.readmore': 'Read Research →',
     'analysis.label':   'Analysis',
@@ -214,28 +236,21 @@ const translations = {
     'analysis.body':        'Evaluates body composition in conjunction with InBody values.',
     'cta.title': 'Start Your Better Transformation<br /><span class="hl">Today</span>',
     'cta.desc':  'Our expert team is ready to guide you every step of the way.',
-    'kidsprob.label':          'Thai Children Situation',
-    'kidsprob.title':          'What Problems Are<br/><span class="hl">Thai Children Facing?</span>',
-    'kidsprob.problems.label': '4 Key Problems Found in Thai Children',
-    'kidsprob.p1': 'Sitting in class for long hours',
-    'kidsprob.p2': 'Increased screen time',
-    'kidsprob.p3': 'Lack of physical movement',
-    'kidsprob.p4': 'Insufficient rest',
-    'kidsprob.effects.label':  'Resulting Effects',
-    'kidsprob.e1': 'Hunched back, rounded shoulders',
-    'kidsprob.e2': 'Reduced focus, easily fatigued',
-    'kidsprob.e3': 'Lack of self-confidence',
     'want.label': 'Customers Want',
     'want.title': 'Customers Want<br /><span class="hl">Personalized Services</span>',
     'want.desc':  'Required Body Data Varies By Goals And Interests.',
-    'edu.title':      'From a Country That Values Education<span class="hl"> — to Developing Physical Health Alongside Learning</span>',
-    'edu.desc':       'Schools and child development centers in Korea have begun using data on physique, body balance, and movement to systematically support children\'s learning.',
+    'edu.title':  'From Body Assessment<span class="hl"> to Measurable Results</span>',
+    'edu.desc':   'Whether it\'s a clinic, gym, school, or company, OUTBODY uses the same process to turn body data into a personalized development plan you can systematically track.',
+    'edu.step1':  'Assessment',
+    'edu.step2':  'AI Analysis',
+    'edu.step3':  'Personalized Program',
+    'edu.step4':  'Better Results',
     'experts.title':  'Developed by Experts in Health,<br/><span class="hl">Technology & Movement Analysis</span>',
     'experts.subtitle': '5 years of combined experience, deployed across multiple countries, backed by extensive research and data.',
-    'experts.c1':     'A team of health and physiotherapy experts who design safe and effective programs for children.',
+    'experts.c1':     'A team of health and physiotherapy experts who design safe and effective programs for every kind of user.',
     'experts.c2':     'An AI system that analyzes body data in real-time to deliver accurate and personalized results.',
     'experts.c3':     'The science of body movement that helps analyze posture, balance, and muscle development.',
-    'experts.c4':     'Deep data analysis to track development and generate easy-to-understand reports for parents and teachers.',
+    'experts.c4':     'Deep data analysis to track development and generate easy-to-understand reports for both users and the professionals who guide them.',
     'analysis.title': 'What Can OUTBODY Analyze?',
     'analysis.posture':     'Body Alignment — Assess balance and recommend correct posture.',
     'analysis.flexibility': 'Flexibility — Evaluate range of motion and joint stability.',
@@ -258,7 +273,14 @@ const translations = {
     'modal.submit':  'Submit',
     'modal.success_title': 'Submitted Successfully!',
     'modal.success_desc':  'Our team will contact you within 1 business day.',
-    'footer.tagline': 'Elevating the standard of AI body analysis and customer management solutions for health and fitness professionals.',
+    'modal.interest_label':       'Which best describes you?',
+    'modal.interest.placeholder': 'Select your area of interest',
+    'modal.interest.rehab':       'Wellness / Rehab',
+    'modal.interest.gym':         'Performance Gym',
+    'modal.interest.kids':        'Kids / Education',
+    'modal.interest.corporate':   'Corporate Wellness',
+    'modal.interest.other':       'Other',
+    'footer.tagline': 'Elevating the standard of AI body analysis for recovery, fitness, education, and corporate wellness.',
     'stats.units':   'Units installed in Korea',
     'stats.items':   'Analysis items',
     'stats.content': 'Exercise content',
@@ -347,45 +369,6 @@ document.getElementById('langToggle')?.addEventListener('click', () => {
 
 // ---- Lucide icons ----
 if (typeof lucide !== 'undefined') lucide.createIcons();
-
-// ---- Kids Problem Slideshow ----
-(function() {
-  const slides = document.querySelectorAll('.kidsprob__slide');
-  const dots   = document.querySelectorAll('.kidsprob__dot');
-  if (!slides.length) return;
-
-  let current = 0;
-  slides[0].classList.add('active');
-  if (dots.length) dots[0].classList.add('active');
-
-  function goTo(next) {
-    const prev = current;
-    current = next;
-
-    // Exit current slide upward
-    slides[prev].classList.remove('active');
-    slides[prev].classList.add('exit');
-    if (dots.length) dots[prev].classList.remove('active');
-
-    // After exit transition, remove exit and reset to bottom (ready for re-entry)
-    setTimeout(() => {
-      slides[prev].classList.remove('exit');
-      // force reflow so transition doesn't fire when resetting position
-      slides[prev].style.transition = 'none';
-      slides[prev].style.transform = 'translateY(100%)';
-      slides[prev].offsetHeight; // reflow
-      slides[prev].style.transition = '';
-      slides[prev].style.transform = '';
-    }, 650);
-
-    // Bring in next slide from bottom
-    slides[current].classList.add('active');
-    if (dots.length) dots[current].classList.add('active');
-  }
-
-  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-  setInterval(() => goTo((current + 1) % slides.length), 3000);
-})();
 
 // ---- Navbar scroll effect + Back to top ----
 const navbar = document.querySelector('.navbar');

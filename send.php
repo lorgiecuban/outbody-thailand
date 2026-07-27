@@ -14,6 +14,7 @@ $name         = trim($_POST['from_name'] ?? '');
 $phone        = trim($_POST['phone'] ?? '');
 $email        = trim($_POST['from_email'] ?? '');
 $organization = trim($_POST['organization'] ?? '');
+$interest     = trim($_POST['interest'] ?? '');
 $message      = trim($_POST['message'] ?? '');
 
 if (empty($name) || empty($phone)) {
@@ -29,6 +30,7 @@ $body  = "ชื่อ: $name\n";
 $body .= "เบอร์โทร: $phone\n";
 $body .= "อีเมล: $email\n";
 $body .= "องค์กร/โรงเรียน: $organization\n";
+$body .= "สนใจด้าน: $interest\n";
 $body .= "ข้อความ: $message\n";
 
 $headers  = "From: outbody@bloom-park.com\r\n";
