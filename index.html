@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light-amber">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OUTBODY Thailand - เทคโนโลยีวิเคราะห์ร่างกายอัจฉริยะ ประเมินสุขภาพและศักยภาพอย่างแม่นยำและปลอดภัย" />
+  <title>OUTBODY Thailand</title>
+  <link rel="icon" href="assets/images/favi.svg?v=2" type="image/svg+xml" />
+  <link rel="shortcut icon" href="assets/images/favi.svg?v=2" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="navbar__logo">
+    <img src="assets/images/logo-outbody-thailand_final.svg" alt="OUTBODY Thailand" class="navbar__logo-img" />
+  </a>
+
+  <nav class="navbar__nav" aria-label="Main navigation">
+    <a href="#home"     data-i18n="nav.home">หน้าแรก</a>
+    <a href="#research" data-i18n="nav.why">OUTBODY คืออะไร</a>
+    <a href="#analysis" data-i18n="nav.analysis">การวิเคราะห์</a>
+    <a href="#report"   data-i18n="nav.report">รายงาน</a>
+  </nav>
+
+  <div class="navbar__right">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language"><img class="lang-toggle__flag" src="https://flagcdn.com/gb.svg" alt="EN" /></button>
+    <a href="#contact" class="btn-nav-cta" data-i18n="nav.cta">ลงทะเบียนทดลอง</a>
+  </div>
+
+  <button class="navbar__hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile drawer -->
+<nav class="navbar__drawer" aria-label="Mobile navigation">
+  <a href="#home"     data-i18n="nav.home">หน้าแรก</a>
+  <a href="#research" data-i18n="nav.why">OUTBODY คืออะไร</a>
+  <a href="#analysis" data-i18n="nav.analysis">การวิเคราะห์</a>
+  <a href="#report"   data-i18n="nav.report">รายงาน</a>
+  <a href="#contact" class="btn-drawer-cta" data-i18n="btn.book">ลงทะเบียนทดลอง</a>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__badge">AI BODY ANALYSIS AND CUSTOMERS MANAGEMENT ALL IN ONE SOLUTION</div>
+
+  <h1 class="hero__title" data-i18n-html="hero.title">ร่างกายที่ดี คือจุดเริ่มต้นของการเรียนรู้</h1>
+
+  <p class="hero__subtitle" data-i18n-html="hero.subtitle">วิเคราะห์สรีระและพัฒนาการทางกายของเด็ก<br />เพื่อส่งเสริมสมาธิ การเรียนรู้ และการเติบโตอย่างเต็มศักยภาพ</p>
+
+  <p class="hero__tagline" data-i18n-html="hero.tagline">ให้ OUTBODY ช่วยคุณเริ่มต้น<strong>การเปลี่ยนแปลงที่ดีขึ้น</strong></p>
+
+  <div class="hero__cta">
+    <a href="#contact" class="btn-primary" data-i18n="btn.book">ลงทะเบียนทดลอง</a>
+    <a href="#spec" class="btn-secondary" data-i18n="btn.download">ดาวน์โหลดตัวอย่างรายงาน</a>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    เลื่อนลง
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+     ============================================================ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stats__item reveal">
+        <div class="stats__num">2,000<span>+</span></div>
+        <div class="stats__label" data-i18n="stats.units">เครื่องติดตั้งในเกาหลี</div>
+      </div>
+      <div class="stats__item reveal reveal-delay-1">
+        <div class="stats__num">70<span>+</span></div>
+        <div class="stats__label" data-i18n="stats.items">รายการวิเคราะห์</div>
+      </div>
+      <div class="stats__item reveal reveal-delay-2">
+        <div class="stats__num">300<span>+</span></div>
+        <div class="stats__label" data-i18n="stats.content">คอนเทนต์ออกกำลังกาย</div>
+      </div>
+      <div class="stats__item reveal reveal-delay-3">
+        <div class="stats__num">4.7<span>/5</span></div>
+        <div class="stats__label" data-i18n="stats.rating">คะแนนความพึงพอใจ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESEARCH — งานวิจัยระดับโลก
+     ============================================================ -->
+<section class="research" id="research">
+  <div class="container">
+    <div class="research__header reveal">
+      <div class="research__eyebrow">
+        <span class="research__eyebrow-dot"></span>
+        <span data-i18n="research.subtitle">งานวิจัยระดับโลกบอกอะไร</span>
+        <span class="research__eyebrow-dot"></span>
+      </div>
+      <h2 class="research__title" data-i18n-html="research.title">การเคลื่อนไหวของร่างกาย<br/><span class="hl">ส่งผลต่อการเรียนรู้โดยตรง</span></h2>
+      <div class="research__title-bar"></div>
+    </div>
+    <div class="research__grid">
+      <div class="research__card reveal reveal-delay-1">
+        <div class="research__card-logo"><img src="assets/images/WHO_logo.svg.png" alt="WHO" /></div>
+        <p class="research__card-body" data-i18n-html="research.who">เด็กควรมีกิจกรรมทางกายอย่างน้อย <strong>60 นาทีต่อวัน</strong> เพื่อพัฒนาการที่สมบูรณ์</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK566046/" class="research__card-link" target="_blank" rel="noopener" data-i18n="research.readmore">อ่านงานวิจัย →</a>
+      </div>
+      <div class="research__card reveal reveal-delay-2">
+        <div class="research__card-logo"><img src="assets/images/OECD_logo.svg.png" alt="OECD" /></div>
+        <p class="research__card-body" data-i18n-html="research.oecd">เด็กที่มีกิจกรรมทางกายสม่ำเสมอ มีแนวโน้ม<strong>ผลการเรียนที่ดีกว่า</strong></p>
+        <a href="#" class="research__card-link" data-i18n="research.readmore">อ่านงานวิจัย →</a>
+      </div>
+      <div class="research__card reveal reveal-delay-3">
+        <div class="research__card-logo"><img src="assets/images/framed_hms_logo.png" alt="Harvard Medical School" /></div>
+        <p class="research__card-body" data-i18n-html="research.harvard">การออกกำลังกายช่วยกระตุ้น<strong>การทำงานของสมอง ความจำ และสมาธิ</strong></p>
+        <a href="#" class="research__card-link" data-i18n="research.readmore">อ่านงานวิจัย →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     KIDS PROBLEM — เด็กไทยกำลังเผชิญปัญหาอะไร?
+     ============================================================ -->
+<section class="kidsprob" id="kidsprob">
+  <div class="container">
+
+    <div class="kidsprob__cols">
+
+      <!-- COL 1: Header + Problems list -->
+      <div class="kidsprob__left reveal">
+        <div class="kidsprob__header">
+          <span class="section-label" data-i18n="kidsprob.label">สถานการณ์เด็กไทย</span>
+          <h2 class="section-title" data-i18n-html="kidsprob.title">เด็กไทยกำลังเผชิญ<br/><span class="hl">ปัญหาอะไร?</span></h2>
+        </div>
+        <div class="kidsprob__problem-rows">
+          <div class="kidsprob__row">
+            <div class="kidsprob__row-icon">01</div>
+            <div class="kidsprob__row-text" data-i18n="kidsprob.p1">นั่งเรียนเป็นเวลานาน</div>
+          </div>
+          <div class="kidsprob__row">
+            <div class="kidsprob__row-icon">02</div>
+            <div class="kidsprob__row-text" data-i18n="kidsprob.p2">ใช้หน้าจอมากขึ้น</div>
+          </div>
+          <div class="kidsprob__row">
+            <div class="kidsprob__row-icon">03</div>
+            <div class="kidsprob__row-text" data-i18n="kidsprob.p3">ขาดการเคลื่อนไหว</div>
+          </div>
+          <div class="kidsprob__row">
+            <div class="kidsprob__row-icon">04</div>
+            <div class="kidsprob__row-text" data-i18n="kidsprob.p4">พักผ่อนไม่เพียงพอ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 2: Effects slideshow -->
+      <div class="kidsprob__right reveal reveal-delay-2">
+        <div class="kidsprob__slide-label" data-i18n="kidsprob.effects.label">ผลที่เกิดขึ้น</div>
+        <div class="kidsprob__slideshow">
+          <div class="kidsprob__slide kidsprob__slide--1">
+            <img src="assets/images/kids/kids-posture.jpg" alt="หลังค่อม ไหล่ห่อ" />
+            <div class="kidsprob__slide-text" data-i18n="kidsprob.e1">หลังค่อม ไหล่ห่อ</div>
+          </div>
+          <div class="kidsprob__slide kidsprob__slide--2">
+            <img src="assets/images/kids/kids-focus.jpg" alt="สมาธิลดลง อ่อนล้าง่าย" />
+            <div class="kidsprob__slide-text" data-i18n="kidsprob.e2">สมาธิลดลง อ่อนล้าง่าย</div>
+          </div>
+          <div class="kidsprob__slide kidsprob__slide--3">
+            <img src="assets/images/kids/kids-confidence.jpg" alt="ขาดความมั่นใจ" />
+            <div class="kidsprob__slide-text" data-i18n="kidsprob.e3">ขาดความมั่นใจ</div>
+          </div>
+        </div>
+        <div class="kidsprob__dots">
+          <span class="kidsprob__dot active"></span>
+          <span class="kidsprob__dot"></span>
+          <span class="kidsprob__dot"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION TIMELINE
+     ============================================================ -->
+<section class="edutimeline" id="edutimeline">
+  <div class="container">
+    <div class="edutimeline__inner">
+
+      <div class="edutimeline__text reveal">
+        <h2 class="edutimeline__title" data-i18n-html="edu.title">จากประเทศที่ให้ความสำคัญกับการศึกษา<span class="hl">สู่การดูแลพัฒนาการร่างกายควบคู่กัน</span></h2>
+        <p class="edutimeline__desc" data-i18n="edu.desc">โรงเรียนและศูนย์พัฒนาเด็กในเกาหลีได้เริ่มใช้ข้อมูลด้านสรีระ ความสมดุลร่างกาย และการเคลื่อนไหว เพื่อช่วยสนับสนุนการเรียนรู้ของเด็กอย่างเป็นระบบ</p>
+      </div>
+
+      <div class="edutimeline__flow reveal reveal-delay-2">
+
+        <div class="edutimeline__node">
+          <div class="edutimeline__circle edutimeline__circle--1">
+            <div class="edutimeline__pulse"></div>
+            <span>01</span>
+          </div>
+          <div class="edutimeline__node-label">Education</div>
+        </div>
+
+        <div class="edutimeline__connector"></div>
+
+        <div class="edutimeline__node">
+          <div class="edutimeline__circle edutimeline__circle--2">
+            <div class="edutimeline__pulse"></div>
+            <span>02</span>
+          </div>
+          <div class="edutimeline__node-label">Physical Assessment</div>
+        </div>
+
+        <div class="edutimeline__connector"></div>
+
+        <div class="edutimeline__node">
+          <div class="edutimeline__circle edutimeline__circle--3">
+            <div class="edutimeline__pulse"></div>
+            <span>03</span>
+          </div>
+          <div class="edutimeline__node-label">Customized Exercise</div>
+        </div>
+
+        <div class="edutimeline__connector"></div>
+
+        <div class="edutimeline__node">
+          <div class="edutimeline__circle edutimeline__circle--4 edutimeline__circle--final">
+            <div class="edutimeline__pulse edutimeline__pulse--final"></div>
+            <span>04</span>
+          </div>
+          <div class="edutimeline__node-label edutimeline__node-label--final">Better Learning Outcomes</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERTS — พัฒนาโดยผู้เชี่ยวชาญ
+     ============================================================ -->
+<section class="experts" id="experts">
+  <div class="container experts__inner">
+    <div class="experts__header reveal">
+      <h2 class="experts__title" data-i18n-html="experts.title">พัฒนาโดยผู้เชี่ยวชาญด้านสุขภาพ<br/><span class="hl">เทคโนโลยี และการวิเคราะห์การเคลื่อนไหว</span></h2>
+      <p class="experts__subtitle" data-i18n="experts.subtitle">ประสบการณ์รวม 5 ปี พัฒนาและใช้งานในหลายประเทศ งานวิจัยและฐานข้อมูลจำนวนมาก</p>
+    </div>
+    <div class="experts__cards reveal reveal-delay-1">
+      <div class="experts__card">
+        <div class="experts__card-icon"><i data-lucide="heart-pulse"></i></div>
+        <div class="experts__card-label">Healthcare</div>
+        <p class="experts__card-desc" data-i18n="experts.c1">ทีมผู้เชี่ยวชาญด้านสุขภาพและกายภาพบำบัด ออกแบบโปรแกรมที่ปลอดภัยและมีประสิทธิภาพสำหรับเด็ก</p>
+      </div>
+      <div class="experts__card">
+        <div class="experts__card-icon"><i data-lucide="cpu"></i></div>
+        <div class="experts__card-label">AI Technology</div>
+        <p class="experts__card-desc" data-i18n="experts.c2">ระบบ AI วิเคราะห์ข้อมูลร่างกายแบบ Real-time เพื่อให้ผลลัพธ์ที่แม่นยำและปรับแต่งได้</p>
+      </div>
+      <div class="experts__card">
+        <div class="experts__card-icon"><i data-lucide="activity"></i></div>
+        <div class="experts__card-label">Movement Science</div>
+        <p class="experts__card-desc" data-i18n="experts.c3">ศาสตร์ด้านการเคลื่อนไหวร่างกายที่ช่วยวิเคราะห์ท่าทาง ความสมดุล และพัฒนาการกล้ามเนื้อ</p>
+      </div>
+      <div class="experts__card">
+        <div class="experts__card-icon"><i data-lucide="bar-chart-2"></i></div>
+        <div class="experts__card-label">Data Analytics</div>
+        <p class="experts__card-desc" data-i18n="experts.c4">วิเคราะห์ข้อมูลเชิงลึกเพื่อติดตามพัฒนาการและสร้างรายงานที่เข้าใจง่ายสำหรับผู้ปกครองและครู</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ANALYSIS — OUTBODY วิเคราะห์อะไรได้บ้าง
+     ============================================================ -->
+<section class="analysis2" id="analysis">
+  <div class="analysis2__inner">
+    <div class="analysis2__header reveal">
+      <h2 class="analysis2__title"><span class="analysis2__brand">OUTBODY</span> <span class="hl" data-i18n="analysis.title">วิเคราะห์อะไรได้บ้าง</span></h2>
+    </div>
+    <div class="analysis2__cards reveal reveal-delay-1">
+      <div class="analysis2__card" style="background-color:#6076b9">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/posture.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Posture</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="scan"></i></div>
+            <div class="analysis2__card-label">Posture</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.posture">การจัดแนวร่างกาย — ประเมินความสมดุลและแนะนำท่าทางที่ถูกต้อง</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#8667ad">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/flexibility.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Flexibility</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="move"></i></div>
+            <div class="analysis2__card-label">Flexibility</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.flexibility">ความยืดหยุ่น — ประเมินการเคลื่อนไหวและความมั่นคงของข้อต่อ</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#f39144">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/strength.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Strength</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="dumbbell"></i></div>
+            <div class="analysis2__card-label">Strength</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.strength">ความแข็งแรง — ประเมินกำลังกล้ามเนื้อและการเคลื่อนไหว</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#239eb0">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/agility.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Agility</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="zap"></i></div>
+            <div class="analysis2__card-label">Agility</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.agility">ความคล่องตัว — ประเมินความสามารถในการเคลื่อนไหวเร็ว</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#1baa77">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/balance.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Balance</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="scale"></i></div>
+            <div class="analysis2__card-label">Balance</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.balance">การทรงตัว — ประเมินความมั่นคงและสมดุลของร่างกาย</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#daa327">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/body-composition.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Body Composition</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="activity"></i></div>
+            <div class="analysis2__card-label">Body Composition</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.body">องค์ประกอบร่างกาย — ประเมินสัดส่วนร่างกายร่วมกับค่า InBody</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REPORT — รายงานที่เข้าใจได้ทันที
+     ============================================================ -->
+<section class="report" id="report">
+  <div class="container report__inner">
+
+    <!-- LEFT: text -->
+    <div class="report__text reveal">
+      <span class="report__eyebrow" data-i18n="report.eyebrow">รายงานผล</span>
+      <h2 class="report__title" data-i18n-html="report.title">รายงานที่<br/><strong>เข้าใจได้ทันที</strong></h2>
+      <ul class="report__checks">
+        <li>
+          <span class="report__check-icon">✓</span>
+          <div>
+            <strong data-i18n="report.c1label">วิเคราะห์</strong>
+            <span data-i18n="report.c1desc">พบจุดที่ควรพัฒนา</span>
+          </div>
+        </li>
+        <li>
+          <span class="report__check-icon">✓</span>
+          <div>
+            <strong data-i18n="report.c2label">เปรียบเทียบ</strong>
+            <span data-i18n="report.c2desc">เทียบตามช่วงวัย</span>
+          </div>
+        </li>
+        <li>
+          <span class="report__check-icon">✓</span>
+          <div>
+            <strong data-i18n="report.c3label">แนะนำ</strong>
+            <span data-i18n="report.c3desc">แนวทางพัฒนาเฉพาะบุคคล</span>
+          </div>
+        </li>
+      </ul>
+      <a href="assets/sample-report.pdf" class="report__btn" download>
+        <i data-lucide="download"></i>
+        <span data-i18n="report.btn">ดาวน์โหลดตัวอย่างรายงาน</span>
+      </a>
+    </div>
+
+    <!-- RIGHT: image slider -->
+    <div class="report__slider reveal reveal-delay-1">
+      <div class="report__slides">
+        <div class="report__track">
+          <div class="report__slide"><img src="assets/images/report/1.jpg" alt="รายงานผล 1" /></div>
+          <div class="report__slide"><img src="assets/images/report/2.jpg" alt="รายงานผล 2" /></div>
+          <div class="report__slide"><img src="assets/images/report/3.jpg" alt="รายงานผล 3" /></div>
+          <div class="report__slide"><img src="assets/images/report/4.jpg" alt="รายงานผล 4" /></div>
+          <div class="report__slide"><img src="assets/images/report/5.jpg" alt="รายงานผล 5" /></div>
+          <div class="report__slide"><img src="assets/images/report/6.jpg" alt="รายงานผล 6" /></div>
+          <div class="report__slide"><img src="assets/images/report/7.jpg" alt="รายงานผล 7" /></div>
+          <div class="report__slide"><img src="assets/images/report/8.jpg" alt="รายงานผล 8" /></div>
+        </div>
+      </div>
+      <div class="report__dots">
+        <span class="report__dot report__dot--active"></span>
+        <span class="report__dot"></span>
+        <span class="report__dot"></span>
+        <span class="report__dot"></span>
+        <span class="report__dot"></span>
+        <span class="report__dot"></span>
+      </div>
+      <button class="report__prev" aria-label="ก่อนหน้า"><i data-lucide="chevron-left"></i></button>
+      <button class="report__next" aria-label="ถัดไป"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="cta-main">
+  <div class="cta-main__bg"></div>
+  <div class="container cta-main__inner reveal">
+    <p class="cta-main__eyebrow" data-i18n="cta.eyebrow">ทดลองวิเคราะห์ร่างกายฟรี</p>
+    <h2 class="cta-main__title" data-i18n-html="cta.title">ค้นพบศักยภาพที่ซ่อนอยู่<br/><span class="hl">ได้แล้ววันนี้</span></h2>
+    <a href="#contact" class="cta-main__btn" data-i18n="cta.btn">ลงทะเบียนทดลอง</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo"><img src="assets/images/logo-outbody-thailand_final_black.svg" alt="OUTBODY Thailand" /></div>
+        <p class="footer__tagline" data-i18n="footer.tagline">
+          ยกระดับมาตรฐานการวิเคราะห์ร่างกายด้วย AI และโซลูชัน
+          การบริหารลูกค้าสำหรับมืออาชีพด้านสุขภาพและฟิตเนส
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="footer__social" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="footer__social" target="_blank" rel="noopener" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__info">
+        <div>
+          <div class="footer__info-heading">CONTACT &amp; COMPANY</div>
+          <p class="footer__info-body">
+            <i class="fa-solid fa-envelope"></i> outbody@bloom-park.com<br />
+            <i class="fa-solid fa-phone"></i> 02-747-3800<br /><br />
+            <strong>OUTBODY Thailand</strong><br />
+            เลขที่ 3 ถนนเฉลิมพระเกียรติ ร.9 ซอย 23<br />
+            แขวงหนองบอน เขตประเวศ กรุงเทพ 10250
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">Copyright ⓒ 2026 OUTBODY Global All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#">ห้ามเก็บรวบรวมอีเมล</a>
+        <a href="#">นโยบายความเป็นส่วนตัว</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ============================================================
+     REGISTER MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="ปิด"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal__header">
+      <p class="modal__eyebrow" data-i18n="modal.eyebrow">ทดลองฟรี</p>
+      <h3 class="modal__title" id="modalTitle" data-i18n="modal.title">ลงทะเบียนทดลอง</h3>
+      <p class="modal__subtitle" data-i18n="modal.subtitle">กรอกข้อมูลด้านล่าง ทีมงานจะติดต่อกลับภายใน 1 วันทำการ</p>
+    </div>
+    <form class="modal__form" id="registerForm" novalidate>
+      <div class="modal__row">
+        <div class="modal__field">
+          <label class="modal__label" for="field-name">ชื่อ-นามสกุล <span>*</span></label>
+          <input class="modal__input" id="field-name" name="from_name" type="text" placeholder="ชื่อ นามสกุล" required />
+        </div>
+        <div class="modal__field">
+          <label class="modal__label" for="field-phone">เบอร์โทรศัพท์ <span>*</span></label>
+          <input class="modal__input" id="field-phone" name="phone" type="tel" placeholder="08x-xxx-xxxx" required />
+        </div>
+      </div>
+      <div class="modal__field">
+        <label class="modal__label" for="field-email">อีเมล <span>*</span></label>
+        <input class="modal__input" id="field-email" name="from_email" type="email" placeholder="email@example.com" required />
+      </div>
+      <div class="modal__field">
+        <label class="modal__label" for="field-org">โรงเรียน / องค์กร</label>
+        <input class="modal__input" id="field-org" name="organization" type="text" placeholder="ชื่อโรงเรียนหรือองค์กร" />
+      </div>
+      <div class="modal__field">
+        <label class="modal__label" for="field-msg">ข้อความเพิ่มเติม</label>
+        <textarea class="modal__input modal__textarea" id="field-msg" name="message" placeholder="สอบถามเพิ่มเติม..." rows="3"></textarea>
+      </div>
+      <button class="modal__submit" type="submit" id="modalSubmit">
+        <span class="modal__submit-text" data-i18n="modal.submit">ส่งข้อมูล</span>
+        <span class="modal__submit-loading" hidden><i class="fa-solid fa-spinner fa-spin"></i> กำลังส่ง...</span>
+      </button>
+      <p class="modal__note">ข้อมูลของคุณจะถูกเก็บเป็นความลับ ไม่มีการเผยแพร่</p>
+    </form>
+    <div class="modal__success" id="modalSuccess">
+      <i class="fa-solid fa-circle-check"></i>
+      <h4 data-i18n="modal.success_title">ส่งข้อมูลสำเร็จ!</h4>
+      <p data-i18n="modal.success_desc">ทีมงานจะติดต่อกลับภายใน 1 วันทำการ</p>
+    </div>
+  </div>
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="กลับด้านบน">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
