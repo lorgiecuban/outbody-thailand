@@ -690,6 +690,24 @@ button { cursor: pointer; font-family: var(--font-th); }
   color: var(--clr-muted);
 }
 
+.pillar-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.pillar-tag {
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--clr-accent);
+  background: rgba(var(--clr-accent-rgb), 0.12);
+  border-radius: 100px;
+  padding: 5px 12px;
+}
+
 @media (max-width: 1024px) {
   .pillars__cards { grid-template-columns: 1fr 1fr; }
 }
@@ -860,6 +878,56 @@ button { cursor: pointer; font-family: var(--font-th); }
 .experts__header {
   text-align: center;
   margin-bottom: 56px;
+}
+
+.founder-spotlight {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: #f9f5ee;
+  border: 1px solid rgba(255,168,0,0.15);
+  border-radius: 20px;
+  padding: 32px 36px;
+  margin-bottom: 40px;
+}
+
+.founder-spotlight__avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-en);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.founder-spotlight__bio {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #555555;
+  margin-bottom: 14px;
+}
+
+.founder-spotlight__name {
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+}
+
+.founder-spotlight__title {
+  font-size: 13px;
+  color: var(--clr-accent2);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  .founder-spotlight { flex-direction: column; padding: 28px 24px; }
 }
 
 .experts__title {
@@ -1342,6 +1410,17 @@ button { cursor: pointer; font-family: var(--font-th); }
   padding-block: var(--section-y);
   background: var(--clr-black);
 }
+
+.age-note {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--clr-muted);
+  border-left: 2px solid var(--clr-accent);
+  padding-left: 14px;
+  max-width: 540px;
+}
+.age-note strong { color: var(--clr-white); }
 
 .solution__inner {
   display: grid;
