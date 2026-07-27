@@ -882,8 +882,8 @@ button { cursor: pointer; font-family: var(--font-th); }
 
 .founder-spotlight {
   display: flex;
-  gap: 28px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
   background: #f9f5ee;
   border: 1px solid rgba(255,168,0,0.15);
   border-radius: 20px;
@@ -891,10 +891,24 @@ button { cursor: pointer; font-family: var(--font-th); }
   margin-bottom: 40px;
 }
 
+.founder-spotlight__leaders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.founder-spotlight__leader {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+  min-width: 220px;
+}
+
 .founder-spotlight__avatar {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: var(--clr-accent);
   color: #ffffff;
@@ -903,14 +917,15 @@ button { cursor: pointer; font-family: var(--font-th); }
   justify-content: center;
   font-family: var(--font-en);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 17px;
 }
 
-.founder-spotlight__bio {
-  font-size: 15px;
-  line-height: 1.75;
-  color: #555555;
-  margin-bottom: 14px;
+.founder-spotlight__note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #777777;
+  border-top: 1px solid rgba(255,168,0,0.15);
+  padding-top: 16px;
 }
 
 .founder-spotlight__name {
@@ -927,7 +942,8 @@ button { cursor: pointer; font-family: var(--font-th); }
 }
 
 @media (max-width: 640px) {
-  .founder-spotlight { flex-direction: column; padding: 28px 24px; }
+  .founder-spotlight { padding: 28px 24px; }
+  .founder-spotlight__leaders { flex-direction: column; gap: 20px; }
 }
 
 .experts__title {
