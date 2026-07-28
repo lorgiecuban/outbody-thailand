@@ -30,9 +30,9 @@
 
   <nav class="navbar__nav" aria-label="Main navigation">
     <a href="#home"      data-i18n="nav.home">หน้าแรก</a>
-    <a href="#research"  data-i18n="nav.why">OUTBODY คืออะไร</a>
-    <a href="#solutions" data-i18n="nav.solutions">โซลูชัน</a>
     <a href="#analysis"  data-i18n="nav.analysis">การวิเคราะห์</a>
+    <a href="#solutions" data-i18n="nav.solutions">โซลูชัน</a>
+    <a href="#research"  data-i18n="nav.why">OUTBODY คืออะไร</a>
     <a href="#report"    data-i18n="nav.report">รายงาน</a>
   </nav>
 
@@ -49,9 +49,9 @@
 <!-- Mobile drawer -->
 <nav class="navbar__drawer" aria-label="Mobile navigation">
   <a href="#home"      data-i18n="nav.home">หน้าแรก</a>
-  <a href="#research"  data-i18n="nav.why">OUTBODY คืออะไร</a>
-  <a href="#solutions" data-i18n="nav.solutions">โซลูชัน</a>
   <a href="#analysis"  data-i18n="nav.analysis">การวิเคราะห์</a>
+  <a href="#solutions" data-i18n="nav.solutions">โซลูชัน</a>
+  <a href="#research"  data-i18n="nav.why">OUTBODY คืออะไร</a>
   <a href="#report"    data-i18n="nav.report">รายงาน</a>
   <a href="#contact" class="btn-drawer-cta" data-i18n="btn.book">ลงทะเบียนทดลอง</a>
 </nav>
@@ -69,11 +69,6 @@
   <p class="hero__subtitle" data-i18n-html="hero.subtitle">เทคโนโลยี AI วิเคราะห์ร่างกาย เพื่อการฟื้นฟู พัฒนาสมรรถภาพ<br />การเติบโตของเด็ก และสุขภาพในองค์กร</p>
 
   <p class="hero__tagline" data-i18n-html="hero.tagline">ให้ OUTBODY ช่วยคุณเริ่มต้น<strong>การเปลี่ยนแปลงที่ดีขึ้น</strong></p>
-
-  <div class="hero__cta">
-    <a href="#contact" class="btn-primary" data-i18n="btn.book">ลงทะเบียนทดลอง</a>
-    <a href="#spec" class="btn-secondary" data-i18n="btn.download">ดาวน์โหลดตัวอย่างรายงาน</a>
-  </div>
 
   <div class="hero__scroll" aria-hidden="true">
     <div class="hero__scroll-line"></div>
@@ -103,6 +98,127 @@
         <div class="stats__num">4.7<span>/5</span></div>
         <div class="stats__label" data-i18n="stats.rating">คะแนนความพึงพอใจ</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ANALYSIS — OUTBODY วิเคราะห์อะไรได้บ้าง
+     ============================================================ -->
+<section class="analysis2" id="analysis">
+  <div class="analysis2__inner">
+    <div class="analysis2__header reveal">
+      <h2 class="analysis2__title"><span class="analysis2__brand">OUTBODY</span> <span class="hl" data-i18n="analysis.title">วิเคราะห์อะไรได้บ้าง</span></h2>
+    </div>
+    <div class="analysis2__cards reveal reveal-delay-1">
+      <div class="analysis2__card" style="background-color:#6076b9">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/posture.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Posture</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="scan"></i></div>
+            <div class="analysis2__card-label">Posture</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.posture">การจัดแนวร่างกาย — ประเมินความสมดุลและแนะนำท่าทางที่ถูกต้อง</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#8667ad">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/flexibility.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Flexibility</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="move"></i></div>
+            <div class="analysis2__card-label">Flexibility</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.flexibility">ความยืดหยุ่น — ประเมินการเคลื่อนไหวและความมั่นคงของข้อต่อ</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#f39144">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/strength.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Strength</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="dumbbell"></i></div>
+            <div class="analysis2__card-label">Strength</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.strength">ความแข็งแรง — ประเมินกำลังกล้ามเนื้อและการเคลื่อนไหว</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#239eb0">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/agility.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Agility</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="zap"></i></div>
+            <div class="analysis2__card-label">Agility</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.agility">ความคล่องตัว — ประเมินความสามารถในการเคลื่อนไหวเร็ว</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#1baa77">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/balance.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Balance</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="scale"></i></div>
+            <div class="analysis2__card-label">Balance</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.balance">การทรงตัว — ประเมินความมั่นคงและสมดุลของร่างกาย</p>
+          </div>
+        </div>
+      </div>
+      <div class="analysis2__card" style="background-color:#daa327">
+        <div class="analysis2__card-bg" style="background-image:url('assets/images/body-composition.webp')"></div>
+        <div class="analysis2__card-overlay"></div>
+        <div class="analysis2__card-pretitle">Body Composition</div>
+        <div class="analysis2__card-content">
+          <div class="analysis2__card-body">
+            <div class="analysis2__card-icon"><i data-lucide="activity"></i></div>
+            <div class="analysis2__card-label">Body Composition</div>
+            <p class="analysis2__card-desc" data-i18n="analysis.body">องค์ประกอบร่างกาย — ประเมินสัดส่วนร่างกายร่วมกับค่า InBody</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OUTBODY AGE — ตัวเลขเดียวที่บอกทุกอย่าง
+     ============================================================ -->
+<section class="solution" id="outbody-age">
+  <div class="container">
+    <div class="solution__inner">
+
+      <div class="reveal">
+        <span class="section-label" data-i18n="age.label">OUTBODY AGE™</span>
+        <h2 class="section-title" data-i18n-html="age.title">ร่างกายคุณ<br/><span class="hl">อายุเท่าไหร่กันแน่?</span></h2>
+        <div class="divider"></div>
+        <p class="section-desc" data-i18n="age.desc">OUTBODY AGE รวมผลตรวจทั้ง 6 ด้าน — ท่าทาง ความยืดหยุ่น ความแข็งแรง ความคล่องตัว การทรงตัว และองค์ประกอบร่างกาย — มาคำนวณเป็นตัวเลขเดียวที่เข้าใจง่าย เทียบกับอายุจริง เพื่อให้เห็นภาพรวมสุขภาพได้ในทันที</p>
+        <p class="age-note">
+          <strong data-i18n="age.note_label">หมายเหตุ:</strong>
+          <span data-i18n="age.note_body">สำหรับผู้ใช้งานอายุต่ำกว่า 18 ปี ระบบจะแสดงผลเป็น “คะแนนพัฒนาการ” แทนอายุร่างกาย เนื่องจากร่างกายเด็กยังอยู่ในช่วงเจริญเติบโต การเทียบกับอายุจริงจึงไม่สะท้อนผลลัพธ์ที่แท้จริง</span>
+        </p>
+      </div>
+
+      <div class="age-card reveal reveal-delay-1">
+        <div class="age-card__number">-4</div>
+        <div class="age-card__unit" data-i18n="age.card_unit">ปีที่อ่อนกว่าอายุจริง</div>
+        <div class="age-card__sub" data-i18n="age.card_sub">ตัวอย่างผลตรวจ OUTBODY AGE</div>
+        <div class="age-bars">
+          <div class="age-bar"><span class="age-bar__label">Posture</span><div class="age-bar__track"><div class="age-bar__fill" data-width="78%"></div></div></div>
+          <div class="age-bar"><span class="age-bar__label">Flexibility</span><div class="age-bar__track"><div class="age-bar__fill" data-width="85%"></div></div></div>
+          <div class="age-bar"><span class="age-bar__label">Strength</span><div class="age-bar__track"><div class="age-bar__fill" data-width="70%"></div></div></div>
+          <div class="age-bar"><span class="age-bar__label">Agility</span><div class="age-bar__track"><div class="age-bar__fill" data-width="88%"></div></div></div>
+          <div class="age-bar"><span class="age-bar__label">Balance</span><div class="age-bar__track"><div class="age-bar__fill" data-width="74%"></div></div></div>
+          <div class="age-bar"><span class="age-bar__label">Body Comp.</span><div class="age-bar__track"><div class="age-bar__fill" data-width="80%"></div></div></div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -309,127 +425,6 @@
         <div class="experts__card-label">Data Analytics</div>
         <p class="experts__card-desc" data-i18n="experts.c4">วิเคราะห์ข้อมูลเชิงลึกเพื่อติดตามพัฒนาการและสร้างรายงานที่เข้าใจง่าย สำหรับทั้งผู้ใช้งานและผู้ดูแล</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     ANALYSIS — OUTBODY วิเคราะห์อะไรได้บ้าง
-     ============================================================ -->
-<section class="analysis2" id="analysis">
-  <div class="analysis2__inner">
-    <div class="analysis2__header reveal">
-      <h2 class="analysis2__title"><span class="analysis2__brand">OUTBODY</span> <span class="hl" data-i18n="analysis.title">วิเคราะห์อะไรได้บ้าง</span></h2>
-    </div>
-    <div class="analysis2__cards reveal reveal-delay-1">
-      <div class="analysis2__card" style="background-color:#6076b9">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/posture.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Posture</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="scan"></i></div>
-            <div class="analysis2__card-label">Posture</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.posture">การจัดแนวร่างกาย — ประเมินความสมดุลและแนะนำท่าทางที่ถูกต้อง</p>
-          </div>
-        </div>
-      </div>
-      <div class="analysis2__card" style="background-color:#8667ad">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/flexibility.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Flexibility</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="move"></i></div>
-            <div class="analysis2__card-label">Flexibility</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.flexibility">ความยืดหยุ่น — ประเมินการเคลื่อนไหวและความมั่นคงของข้อต่อ</p>
-          </div>
-        </div>
-      </div>
-      <div class="analysis2__card" style="background-color:#f39144">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/strength.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Strength</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="dumbbell"></i></div>
-            <div class="analysis2__card-label">Strength</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.strength">ความแข็งแรง — ประเมินกำลังกล้ามเนื้อและการเคลื่อนไหว</p>
-          </div>
-        </div>
-      </div>
-      <div class="analysis2__card" style="background-color:#239eb0">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/agility.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Agility</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="zap"></i></div>
-            <div class="analysis2__card-label">Agility</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.agility">ความคล่องตัว — ประเมินความสามารถในการเคลื่อนไหวเร็ว</p>
-          </div>
-        </div>
-      </div>
-      <div class="analysis2__card" style="background-color:#1baa77">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/balance.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Balance</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="scale"></i></div>
-            <div class="analysis2__card-label">Balance</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.balance">การทรงตัว — ประเมินความมั่นคงและสมดุลของร่างกาย</p>
-          </div>
-        </div>
-      </div>
-      <div class="analysis2__card" style="background-color:#daa327">
-        <div class="analysis2__card-bg" style="background-image:url('assets/images/body-composition.webp')"></div>
-        <div class="analysis2__card-overlay"></div>
-        <div class="analysis2__card-pretitle">Body Composition</div>
-        <div class="analysis2__card-content">
-          <div class="analysis2__card-body">
-            <div class="analysis2__card-icon"><i data-lucide="activity"></i></div>
-            <div class="analysis2__card-label">Body Composition</div>
-            <p class="analysis2__card-desc" data-i18n="analysis.body">องค์ประกอบร่างกาย — ประเมินสัดส่วนร่างกายร่วมกับค่า InBody</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     OUTBODY AGE — ตัวเลขเดียวที่บอกทุกอย่าง
-     ============================================================ -->
-<section class="solution" id="outbody-age">
-  <div class="container">
-    <div class="solution__inner">
-
-      <div class="reveal">
-        <span class="section-label" data-i18n="age.label">OUTBODY AGE™</span>
-        <h2 class="section-title" data-i18n-html="age.title">ร่างกายคุณ<br/><span class="hl">อายุเท่าไหร่กันแน่?</span></h2>
-        <div class="divider"></div>
-        <p class="section-desc" data-i18n="age.desc">OUTBODY AGE รวมผลตรวจทั้ง 6 ด้าน — ท่าทาง ความยืดหยุ่น ความแข็งแรง ความคล่องตัว การทรงตัว และองค์ประกอบร่างกาย — มาคำนวณเป็นตัวเลขเดียวที่เข้าใจง่าย เทียบกับอายุจริง เพื่อให้เห็นภาพรวมสุขภาพได้ในทันที</p>
-        <p class="age-note">
-          <strong data-i18n="age.note_label">หมายเหตุ:</strong>
-          <span data-i18n="age.note_body">สำหรับผู้ใช้งานอายุต่ำกว่า 18 ปี ระบบจะแสดงผลเป็น “คะแนนพัฒนาการ” แทนอายุร่างกาย เนื่องจากร่างกายเด็กยังอยู่ในช่วงเจริญเติบโต การเทียบกับอายุจริงจึงไม่สะท้อนผลลัพธ์ที่แท้จริง</span>
-        </p>
-      </div>
-
-      <div class="age-card reveal reveal-delay-1">
-        <div class="age-card__number">-4</div>
-        <div class="age-card__unit" data-i18n="age.card_unit">ปีที่อ่อนกว่าอายุจริง</div>
-        <div class="age-card__sub" data-i18n="age.card_sub">ตัวอย่างผลตรวจ OUTBODY AGE</div>
-        <div class="age-bars">
-          <div class="age-bar"><span class="age-bar__label">Posture</span><div class="age-bar__track"><div class="age-bar__fill" data-width="78%"></div></div></div>
-          <div class="age-bar"><span class="age-bar__label">Flexibility</span><div class="age-bar__track"><div class="age-bar__fill" data-width="85%"></div></div></div>
-          <div class="age-bar"><span class="age-bar__label">Strength</span><div class="age-bar__track"><div class="age-bar__fill" data-width="70%"></div></div></div>
-          <div class="age-bar"><span class="age-bar__label">Agility</span><div class="age-bar__track"><div class="age-bar__fill" data-width="88%"></div></div></div>
-          <div class="age-bar"><span class="age-bar__label">Balance</span><div class="age-bar__track"><div class="age-bar__fill" data-width="74%"></div></div></div>
-          <div class="age-bar"><span class="age-bar__label">Body Comp.</span><div class="age-bar__track"><div class="age-bar__fill" data-width="80%"></div></div></div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
