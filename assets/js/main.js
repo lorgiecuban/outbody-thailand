@@ -26,7 +26,7 @@ const FORM_ENDPOINT = 'send.php';
   }
 
   // Open on all CTA buttons
-  document.querySelectorAll('.btn-nav-cta, .btn-drawer-cta, .btn-primary, .cta-main__btn').forEach(btn => {
+  document.querySelectorAll('.btn-nav-cta, .btn-drawer-cta, .btn-primary, .cta-main__btn, .footer__contact-btn').forEach(btn => {
     btn.addEventListener('click', e => {
       e.preventDefault();
       openModal();
@@ -76,7 +76,7 @@ const translations = {
     'btn.download': 'ดาวน์โหลดตัวอย่างรายงาน',
     'btn.contact':  'ติดต่อเรา',
     'hero.title':    'เข้าใจร่างกาย คือจุดเริ่มต้นของทุกเป้าหมาย',
-    'hero.subtitle': 'เทคโนโลยี AI วิเคราะห์ร่างกาย เพื่อการฟื้นฟู พัฒนาสมรรถภาพ<br />การเติบโตของเด็ก และสุขภาพในองค์กร',
+    'hero.subtitle': 'เทคโนโลยี AI วิเคราะห์ร่างกาย เพื่อการฟื้นฟู พัฒนาสมรรถภาพ<br />การเติบโตและสุขภาพในองค์กร',
     'hero.tagline':  'ให้ OUTBODY ช่วยคุณเริ่มต้น<strong>การเปลี่ยนแปลงที่ดีขึ้น</strong>',
     'pillars.label': 'โซลูชันของเรา',
     'pillars.title': 'หนึ่งเครื่อง<br/><span class="hl">เหมาะกับทุกเป้าหมาย</span>',
@@ -122,7 +122,7 @@ const translations = {
     'leaders.ceo_title': 'CEO, OUTBODY Thailand',
     'leaders.md_title':  'Managing Director, OUTBODY Thailand',
     'leaders.comms_title': 'Head of Communications, OUTBODY Thailand',
-    'founder.note':      'OUTBODY ก่อตั้งโดย Rick Nahm, Ph.D ผู้เชี่ยวชาญด้านการฝึกร่างกายกว่า 16 ปี ภายใต้การสนับสนุนของ Hyundai Motor Group',
+    'founder.note':      'OUTBODY ก่อตั้งโดย Rick Nahm, Ph.D ผู้เชี่ยวชาญด้านการฝึกร่างกายกว่า 16 ปี ภายใต้การสนับสนุนของ Hyundai Corporation',
     'age.label':      'OUTBODY AGE',
     'age.title':      'ร่างกายคุณ<br/><span class="hl">อายุเท่าไหร่กันแน่?</span>',
     'age.desc':       'OUTBODY AGE รวมผลตรวจทั้ง 6 ด้าน — ท่าทาง ความยืดหยุ่น ความแข็งแรง ความคล่องตัว การทรงตัว และองค์ประกอบร่างกาย — มาคำนวณเป็นตัวเลขเดียวที่เข้าใจง่าย เทียบกับอายุจริง เพื่อให้เห็นภาพรวมสุขภาพได้ในทันที',
@@ -213,7 +213,7 @@ const translations = {
     'btn.download': 'Download Sample Report',
     'btn.contact':  'Contact Us',
     'hero.title':    'Understanding the Body Is the Start of Every Goal',
-    'hero.subtitle': 'AI-powered body analysis for recovery, performance,<br />child development, and workplace wellness.',
+    'hero.subtitle': 'AI-powered body analysis for recovery, performance,<br />growth, and workplace wellness.',
     'hero.tagline':  'Let OUTBODY help you start your <strong>better transformation</strong>',
     'pillars.label': 'Our Solutions',
     'pillars.title': 'One Device.<br/><span class="hl">Every Goal.</span>',
@@ -259,7 +259,7 @@ const translations = {
     'leaders.ceo_title': 'CEO, OUTBODY Thailand',
     'leaders.md_title':  'Managing Director, OUTBODY Thailand',
     'leaders.comms_title': 'Head of Communications, OUTBODY Thailand',
-    'founder.note':      'OUTBODY was founded by Rick Nahm, Ph.D, a physical training specialist with 16+ years of experience, backed by Hyundai Motor Group.',
+    'founder.note':      'OUTBODY was founded by Rick Nahm, Ph.D, a physical training specialist with 16+ years of experience, backed by Hyundai Corporation.',
     'age.label':      'OUTBODY AGE',
     'age.title':      'How Old Is<br/><span class="hl">Your Body, Really?</span>',
     'age.desc':       'OUTBODY AGE combines all 6 analysis results — posture, flexibility, strength, agility, balance, and body composition — into one easy-to-understand number, compared against your actual age, for an instant picture of your overall health.',
