@@ -702,11 +702,18 @@ button { cursor: pointer; font-family: var(--font-th); }
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.3px;
-  color: var(--clr-accent);
-  background: rgba(var(--clr-accent-rgb), 0.12);
+  color: #ffffff;
   border-radius: 100px;
   padding: 5px 12px;
 }
+
+/* Colors matched to the analysis section's per-metric palette */
+.pillar-tag--posture     { background: #6076b9; }
+.pillar-tag--flexibility { background: #8667ad; }
+.pillar-tag--strength    { background: #f39144; }
+.pillar-tag--agility     { background: #239eb0; }
+.pillar-tag--balance     { background: #1baa77; }
+.pillar-tag--body        { background: #daa327; }
 
 @media (max-width: 1024px) {
   .pillars__cards { grid-template-columns: 1fr 1fr; }
