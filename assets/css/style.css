@@ -1227,18 +1227,38 @@ button { cursor: pointer; font-family: var(--font-th); }
   .analysis2__card:hover {
     flex: none;
   }
-  /* always show pretitle, hide hover content */
-  .analysis2__card-pretitle {
-    font-size: 28px;
-    writing-mode: horizontal-tb;
-    transform: none;
-    text-shadow: 0 1px 8px rgba(0,0,0,0.2);
-  }
-  .analysis2__card:hover .analysis2__card-pretitle {
-    opacity: 1;
-  }
+  /* mobile has no reliable hover — hide the big pretitle, show icon + label
+     centered by default, and reveal the description on tap (.is-open) */
+  .analysis2__card-pretitle { display: none; }
   .analysis2__card-overlay { display: none; }
-  .analysis2__card-content { display: none; }
+  .analysis2__card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    height: 100%;
+    padding: 16px 14px;
+  }
+  .analysis2__card-body {
+    opacity: 1;
+    transform: none;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+  .analysis2__card-icon { display: none; }
+  .analysis2__card-label {
+    font-size: 16px;
+    white-space: normal;
+  }
+  .analysis2__card-desc {
+    font-size: 12px;
+    line-height: 1.5;
+    display: none;
+  }
+  .analysis2__card.is-open .analysis2__card-desc {
+    display: block;
+  }
 }
 
 [data-theme="light-amber"] .analysis2 { background: #111111; }

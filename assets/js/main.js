@@ -67,6 +67,16 @@ const FORM_ENDPOINT = 'send.php';
   });
 })();
 
+// ---- Analysis cards: tap to briefly reveal description on mobile ----
+document.querySelectorAll('.analysis2__card').forEach(card => {
+  let revertTimer = null;
+  card.addEventListener('click', () => {
+    card.classList.add('is-open');
+    clearTimeout(revertTimer);
+    revertTimer = setTimeout(() => card.classList.remove('is-open'), 2000);
+  });
+});
+
 // =============================================
 // i18n — Bilingual TH / EN
 // =============================================
