@@ -487,16 +487,19 @@ ageBars.forEach(bar => {
 
 // ---- Report section slider (3-up, slide 1 at a time) ----
 (function() {
-  const track = document.querySelector('.report__track');
-  const dots  = document.querySelectorAll('.report__dot');
-  const prev  = document.querySelector('.report__prev');
-  const next  = document.querySelector('.report__next');
+  const track  = document.querySelector('.report__track');
+  const dots   = document.querySelectorAll('.report__dot');
+  const prev   = document.querySelector('.report__prev');
+  const next   = document.querySelector('.report__next');
+  const slides = document.querySelector('.report__slides');
   if (!track) return;
 
   const total  = track.children.length; // 8
   const visible = 3;
   const maxPos = total - visible; // 5
   let current  = 0;
+  let autoplay = null;
+  let resumeTimer = null;
 
   function goTo(n) {
     current = Math.max(0, Math.min(n, maxPos));
@@ -505,9 +508,41 @@ ageBars.forEach(bar => {
     dots.forEach((d, i) => d.classList.toggle('report__dot--active', i === current));
   }
 
+  function startAutoplay() {
+    clearInterval(autoplay);
+    autoplay = setInterval(() => goTo(current < maxPos ? current + 1 : 0), 4000);
+  }
+
+  // Stop autoplay whenever the user takes control; resume after a pause
+  function pauseAutoplay() {
+    clearInterval(autoplay);
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(startAutoplay, 6000);
+  }
+
   goTo(0);
-  dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
-  if (prev) prev.addEventListener('click', () => goTo(current - 1));
-  if (next) next.addEventListener('click', () => goTo(current + 1));
-  setInterval(() => goTo(current < maxPos ? current + 1 : 0), 4000);
+  dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); pauseAutoplay(); }));
+  if (prev) prev.addEventListener('click', () => { goTo(current - 1); pauseAutoplay(); });
+  if (next) next.addEventListener('click', () => { goTo(current + 1); pauseAutoplay(); });
+
+  // Touch/swipe support for mobile
+  if (slides) {
+    let touchStartX = 0;
+    let touchDeltaX = 0;
+    slides.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchDeltaX = 0;
+      clearInterval(autoplay);
+    }, { passive: true });
+    slides.addEventListener('touchmove', (e) => {
+      touchDeltaX = e.touches[0].clientX - touchStartX;
+    }, { passive: true });
+    slides.addEventListener('touchend', () => {
+      if (touchDeltaX < -40) goTo(current + 1);
+      else if (touchDeltaX > 40) goTo(current - 1);
+      pauseAutoplay();
+    });
+  }
+
+  startAutoplay();
 })();
