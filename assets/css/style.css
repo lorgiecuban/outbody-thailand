@@ -887,6 +887,19 @@ button { cursor: pointer; font-family: var(--font-th); }
   margin-bottom: 56px;
 }
 
+/* ============================================================
+   LEADERSHIP SECTION
+   ============================================================ */
+.leadership {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.leadership__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .founder-spotlight {
   display: flex;
   flex-direction: column;
@@ -2622,7 +2635,7 @@ button { cursor: pointer; font-family: var(--font-th); }
   .navbar__nav,
   .navbar__lang,
   .btn-nav-cta { display: none; }
-  .navbar__hamburger { display: flex; }
+  .navbar__hamburger { display: flex; margin-inline-start: 12px; }
 
   /* Hero */
   .hero { padding: 110px 20px 80px; }
