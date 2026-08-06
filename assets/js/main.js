@@ -160,6 +160,8 @@ const translations = {
     'modal.interest.corporate':   'สุขภาพองค์กร',
     'modal.interest.other':       'อื่น ๆ',
     'footer.tagline': 'ยกระดับมาตรฐานการวิเคราะห์ร่างกายด้วย AI สำหรับการฟื้นฟู ฟิตเนส การศึกษา และสุขภาพองค์กร',
+    'footer.privacy': 'นโยบายความเป็นส่วนตัว',
+    'nav.back_home': '← กลับหน้าแรก',
     'flow.label':       'AI TECHNOLOGY',
     'flow.title':       'ทุกฟีเจอร์<span class="hl">ในเครื่องเดียว</span>',
     'flow.desc':        'OUTBODY วิเคราะห์ แนะนำ และติดตามผล ครบในเครื่องเดียว ใช้คนเดียวได้ ไม่ต้องมีพนักงาน',
@@ -299,6 +301,8 @@ const translations = {
     'modal.interest.corporate':   'Corporate Wellness',
     'modal.interest.other':       'Other',
     'footer.tagline': 'Elevating the standard of AI body analysis for recovery, fitness, education, and corporate wellness.',
+    'footer.privacy': 'Privacy Policy',
+    'nav.back_home': '← Back to Home',
     'flow.label':       'AI TECHNOLOGY',
     'flow.title':       'All Features <span class="hl">in One Device</span>',
     'flow.desc':        'OUTBODY analyzes, recommends, and monitors — all in one device. Self-service, no staff required.',
@@ -356,6 +360,11 @@ function applyLang(lang) {
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const key = el.dataset.i18nHtml;
     if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  // toggle whole blocks of content by language (for long-form pages
+  // where per-sentence i18n keys aren't practical, e.g. legal pages)
+  document.querySelectorAll('[data-lang-block]').forEach(el => {
+    el.style.display = (el.dataset.langBlock === lang) ? '' : 'none';
   });
   // toggle button label
   const btn = document.getElementById('langToggle');
