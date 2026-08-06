@@ -46,6 +46,13 @@ const FORM_ENDPOINT = 'send.php';
     try {
       const data = new FormData(form);
       const res  = await fetch(FORM_ENDPOINT, { method: 'POST', body: data });
+      const contentType = res.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) {
+        // Server didn't run send.php as PHP (e.g. static hosting like GitHub
+        // Pages can't execute it) — fail gracefully instead of crashing on
+        // an HTML error page.
+        throw new Error('ระบบส่งข้อมูลออนไลน์ยังไม่พร้อมใช้งานในขณะนี้ กรุณาติดต่อเราทางอีเมลหรือโทรศัพท์แทน');
+      }
       const json = await res.json();
       if (!json.success) throw new Error(json.message);
       form.style.display = 'none';
