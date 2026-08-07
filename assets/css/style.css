@@ -384,7 +384,7 @@ button { cursor: pointer; font-family: var(--font-th); }
   font-family: var(--font-en);
   font-size: 11px;
   font-weight: 700;
-  color: var(--clr-accent);
+  color: #6F6AFF;
   letter-spacing: 2px;
   margin-bottom: 36px;
 }
