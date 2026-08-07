@@ -382,9 +382,9 @@ button { cursor: pointer; font-family: var(--font-th); }
   border: 1px solid rgba(200,240,54,0.28);
   border-radius: 100px;
   font-family: var(--font-en);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
-  color: var(--clr-accent2);
+  color: #000000;
   letter-spacing: 2px;
   margin-bottom: 36px;
 }
@@ -2464,9 +2464,9 @@ button { cursor: pointer; font-family: var(--font-th); }
   gap: 24px;
 }
 .cta-main__eyebrow {
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(0,0,0,0.5);
 }
