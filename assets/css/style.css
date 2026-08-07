@@ -3013,6 +3013,8 @@ button { cursor: pointer; font-family: var(--font-th); }
 [data-theme="light-amber"] .footer__info-heading  { color: #000000; }
 [data-theme="light-amber"] .footer__info-body     { color: #000000; }
 [data-theme="light-amber"] .footer__info-body strong { color: #000000; }
+[data-theme="light-amber"] .footer__info-links a  { color: rgba(0,0,0,0.6); }
+[data-theme="light-amber"] .footer__info-links a:hover { color: var(--clr-accent); }
 [data-theme="light-amber"] .footer__contact-btn   { border-color: rgba(0,0,0,0.2); color: #000000; }
 [data-theme="light-amber"] .footer__contact-btn:hover { background: var(--clr-accent); border-color: var(--clr-accent); color: #ffffff; }
 [data-theme="light-amber"] .footer__bottom        { border-top-color: rgba(0,0,0,0.12); }
